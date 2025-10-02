@@ -29,7 +29,20 @@ Before launching the python application
 | Open the configure panel | <img src="img\ibkr_02.png" width="250"> |
 | Goto the settings setion<br>Remove the Read-Only API checkbox<br>Grab the Socket port for your setup<br>Usually 4002 for ib_gateway | <img src="img\ibkr_03.png" width="350"> |
 
-# First run
+# Running the samples
+If you just started the ib_gatway desktop application on your system, a status window should be shown with no client connections.  
+
+| Sample | Description | Result |
+|---|---|---|
+| n.a. | Initial launch of ib_gateway desktop application should show an empty conected clients window  | <img src="img\run_01a.png" width="350"> |
+| 01_connect.py | This script connects to the ib_gateway with client id 101. When ENTER is pressed it simply disconnects. | <img src="img\run_01b.png" width="350"> |
+| 02_accountinfo.py | This script will connect with a new client id (102) and will retreive your account.<br><br>The terminal console should display your existing bying power (example for a single account in IBKR) | <img src="img\run_02a.png" width="350"><br><br><img src="img\run_02b.png" width="350"> |
+| 03_historicaldata.py | This script will connect to ib_gateway with client id 103 and retrieve 1 day of historical minute price data, convert it to a PANDAS dataframe and display the first five rows | <img src="img\run_03a.png" width="350"><br><br><img src="img\run_03b.png" width="350"> |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+
+
 
 
 

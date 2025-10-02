@@ -2,10 +2,9 @@
 import pandas as pd
 from datetime import datetime
 from ib_async import *
-# util.startLoop()  # uncomment this line when in a notebook
 
 ib = IB()
-connect_id = 101
+connect_id = 103
 ib.connect('127.0.0.1', 4002, clientId=connect_id)
 
 contract = Stock("AAPL", "SMART", "USD")                    # Step 1 : Define a contract object for which to fetch data (stocks in this case)
