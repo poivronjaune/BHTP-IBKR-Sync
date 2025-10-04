@@ -28,7 +28,7 @@ The gateway does not offer an interactive ineterface to view portfolio (paper tr
 | Go to interactive broker's web site and find the "Log In" button  | <img src="img\portal_01.png" width="250"> |
 | Find the Portal Login option (you can't miss it)   | <img src="img\portal_02.png" width="250"> |
 | Select Paper Trading Option and connect with the same credentials as you ib_gateway<br>***This will disconnect your local ib_gateway*** | <img src="img\portal_03.png" width="250"> |
-| This will log you in to checl your account status and holdings. | <img src="img\portal_04.png" width="350"> |  
+| This will log you in to check your account status and holdings. You can even close all positions to reset your Paper Trading Account | <img src="img\portal_04.png" width="350"> |  
 >This is not the best workflow setup but I like to keep things to a minimal setup. TWS can be simpler to view actions of your api calls directly, it is possible to switch later to ib_gateway.
 
 # Configuration  
