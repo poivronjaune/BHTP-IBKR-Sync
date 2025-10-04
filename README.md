@@ -20,12 +20,13 @@ Get the latest ib_gateway from [interactive broker's website](https://www.intera
 Another option called [Trader's Workstation](https://www.interactivebrokers.com/en/trading/tws.php) is available to implement the API, but that tool is a fully functional trading platform and is more complicated to use.  
 
 Interactive Broker'S TWS (ib_gateway) [official documentation](https://www.interactivebrokers.com/campus/ibkr-api-page/twsapi-doc/#requests-limitations).   
-***IBKR offers another API Package that is different from ib_async***, so the documentation will not guide you through these examples.  
+***IBKR offers another API Package that is different from ib_async***  
 
 The gateway does not offer an interactive ineterface to view portfolio (paper trading or live trading). During development process TWS might be a better approach or using the IBKR's [Web portal](https://www.interactivebrokers.com/) 
 | Feature | View |
 |---|---|
-| Find the Portal Login option (you can't miss it)   | <img src="img\portal_01.png" width="250"> |
+| Go to interactive broker's web site and find the "Log In" button  | <img src="img\portal_01.png" width="250"> |
+| Find the Portal Login option (you can't miss it)   | <img src="img\portal_02.png" width="250"> |
 | Select Paper Trading Option and connect with the same credentials as you ib_gateway<br>***This will disconnect your local ib_gateway*** | <img src="img\portal_03.png" width="250"> |
 | This will log you in to checl your account status and holdings. | <img src="img\portal_04.png" width="350"> |  
 >This is not the best workflow setup but I like to keep things to a minimal setup. TWS can be simpler to view actions of your api calls directly, it is possible to switch later to ib_gateway.
