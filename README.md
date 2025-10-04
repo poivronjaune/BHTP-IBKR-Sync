@@ -14,14 +14,15 @@ pip install -r requirements.txt
 ```
 
 # Interactive Broker's IB_Gateway
-The python application will use a special package called [ib_async](https://github.com/ib-api-reloaded/ib_async) to connect to the interactive broker's API. 
+The python application will use a special package called [ib_async](https://github.com/ib-api-reloaded/ib_async) to connect to the interactive broker's API.  
 Get the latest ib_gateway from [interactive broker's website](https://www.interactivebrokers.com/en/trading/ibgateway-latest.php)  
 
-Another option called [Trader's Workstation](https://www.interactivebrokers.com/en/trading/tws.php) is available to implement the API like ib_gateway, but that tool is a fully functional trading platform and is more complicated to use.  
+Another option called [Trader's Workstation](https://www.interactivebrokers.com/en/trading/tws.php) is available to implement the API, but that tool is a fully functional trading platform and is more complicated to use.  
 
-Interactive Broker'S TWS (ib_gateway) [official documentation](https://www.interactivebrokers.com/campus/ibkr-api-page/twsapi-doc/#requests-limitations). ***IBKR offers another API Package that is different from ib_async***, so the documentation will not guide you through these examples.  
+Interactive Broker'S TWS (ib_gateway) [official documentation](https://www.interactivebrokers.com/campus/ibkr-api-page/twsapi-doc/#requests-limitations).   
+***IBKR offers another API Package that is different from ib_async***, so the documentation will not guide you through these examples.  
 
-The gateway does not offer an interactive ineterface to view portfolio (paper trading or live trading). During development process TWS might be a better approach. Another approach is to use IBKR's [Web portal](https://www.interactivebrokers.com/) 
+The gateway does not offer an interactive ineterface to view portfolio (paper trading or live trading). During development process TWS might be a better approach or using the IBKR's [Web portal](https://www.interactivebrokers.com/) 
 | Feature | View |
 |---|---|
 | Find the Portal Login option (you can't miss it)   | <img src="img\portal_01.png" width="250"> |
