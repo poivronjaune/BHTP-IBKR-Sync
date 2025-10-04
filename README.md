@@ -17,15 +17,25 @@ pip install -r requirements.txt
 The python application will use a special package called [ib_async](https://github.com/ib-api-reloaded/ib_async) to connect to the interactive broker's API. 
 Get the latest ib_gateway from [interactive broker's website](https://www.interactivebrokers.com/en/trading/ibgateway-latest.php)  
 
-Another option called [Trader's Workstation](https://www.interactivebrokers.com/en/trading/tws.php) is available to implement the API like ib_gateway, but that tool is a fully functional trading platform and is more complicated to use.
+Another option called [Trader's Workstation](https://www.interactivebrokers.com/en/trading/tws.php) is available to implement the API like ib_gateway, but that tool is a fully functional trading platform and is more complicated to use.  
+
+Interactive Broker'S TWS (ib_gateway) [official documentation](https://www.interactivebrokers.com/campus/ibkr-api-page/twsapi-doc/#requests-limitations)  
+
+The gateway does not offer an interactive ineterface to view portfolio (paper trading or live trading). During development process TWS might be a better approach. Another approach is to use IBKR's [Web portal](https://www.interactivebrokers.com/) 
+| Feature | View |
+|---|---|
+| Find the Portal Login option (you can't miss it)   | <img src="img\portal_01.png" width="250"> |
+| Select Paper Trading Option and connect with the same credentials as you ib_gateway<br>***This will disconnect your local ib_gateway*** | <img src="img\portal_03.png" width="250"> |
+| This will log you in to checl your account status and holdings. | <img src="img\portal_04.png" width="350"> |  
+>This is not the best workflow setup but I like to keep things to a minimal setup. TWS can be simpler to view actions of your api calls directly, it is possible to switch later to ib_gateway.
 
 # Configuration  
 See the [ib_async github repo](https://github.com/ib-api-reloaded/ib_async) to view a detailed installation anad configuration process.  
 
-Before launching the python application  
-| Check this | Propable view |
+Check your ib_gateway installation with the following:  
+| Check this | Expected view |
 |---|---|
-| Make sure the ib_gateway is connect to interactive broker's servers.<br>All three services must be in the green state   | <img src="img\ibkr_01.png" width="250"> |
+| Make sure the ib_gateway is connected to interactive broker's servers.<br>All three services must be in the green state   | <img src="img\ibkr_01.png" width="250"> |
 | Open the configure panel | <img src="img\ibkr_02.png" width="250"> |
 | Goto the settings setion<br>Remove the Read-Only API checkbox<br>Grab the Socket port for your setup<br>Usually 4002 for ib_gateway | <img src="img\ibkr_03.png" width="350"> |
 
