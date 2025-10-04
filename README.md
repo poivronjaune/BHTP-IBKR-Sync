@@ -1,5 +1,5 @@
 # BHTP-IBKR-Sync
-Example Synchronous Python to interact with IB_Gateway (from interactive brokers) to get portfolio data, stock prices, historical data and screeners.
+Example Synchronous Python to interact with IB_Gateway (from interactive brokers) to get portfolio data, stock prices, historical data, screeners and place some basic trades.
 
 # Installation (Windows)
 Download an install this repo
@@ -19,7 +19,7 @@ Get the latest ib_gateway from [interactive broker's website](https://www.intera
 
 Another option called [Trader's Workstation](https://www.interactivebrokers.com/en/trading/tws.php) is available to implement the API like ib_gateway, but that tool is a fully functional trading platform and is more complicated to use.  
 
-Interactive Broker'S TWS (ib_gateway) [official documentation](https://www.interactivebrokers.com/campus/ibkr-api-page/twsapi-doc/#requests-limitations)  
+Interactive Broker'S TWS (ib_gateway) [official documentation](https://www.interactivebrokers.com/campus/ibkr-api-page/twsapi-doc/#requests-limitations). ***IBKR offers another API Package that is different from ib_async***, so the documentation will not guide you through these examples.  
 
 The gateway does not offer an interactive ineterface to view portfolio (paper trading or live trading). During development process TWS might be a better approach. Another approach is to use IBKR's [Web portal](https://www.interactivebrokers.com/) 
 | Feature | View |
